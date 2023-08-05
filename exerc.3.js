@@ -9,10 +9,10 @@ function idadeDirecao() {
     else {
         document.getElementById("result").innerHTML = "Você NÃO PODE dirigir!"
     }
-
-    document.getElementById("result").innerHTML = idadeDirecao;
-
+    if (idade < 18 && posseY.checked) {
+        document.getElementById("result").innerHTML = "Quem você pensa que está enganando?";
+}
+}
     function limpar() {
         document.getElementById("result").innerHTML = ""
     }
-}
